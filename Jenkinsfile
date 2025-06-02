@@ -14,8 +14,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    cd /backend
-                    // Ensure Docker is available   
+    
                     // Build Docker image and tag it with the current git commit hash
                     def image = docker.build("VinoaN/sample_node:${env.GIT_COMMIT}","backend")
                 }
