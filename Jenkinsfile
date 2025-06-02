@@ -4,7 +4,7 @@ pipeline {
         // DOCKER_CREDENTIALS = 'docker'
     // }
 environment {
-    IMAGE_NAME = "vinoan/sample_node"
+    IMAGE_NAME = "vinao/sample_node"
     IMAGE_TAG = "${env.GIT_COMMIT}"
 }
 
