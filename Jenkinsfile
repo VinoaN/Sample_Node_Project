@@ -20,7 +20,7 @@ environment {
                 script {
     
                     // Build Docker image and tag it with the current git commit hash
-                    image = docker.build("{IMAGE_NAME}:${IMAGE_TAG}:${env.GIT_COMMIT}","backend")
+                    image = docker.build("${IMAGE_NAME}:${IMAGE_TAG}","backend")
                 }
             }
         }
