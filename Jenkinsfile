@@ -16,7 +16,7 @@ pipeline {
                 script {
     
                     // Build Docker image and tag it with the current git commit hash
-                    def image = docker.build("VinoaN/sample_node:${env.GIT_COMMIT}","backend")
+                    image = docker.build("VinoaN/sample_node:${env.GIT_COMMIT}","backend")
                 }
             }
         }
